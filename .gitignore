@@ -1,0 +1,7 @@
+.vscode/
+build/
+.markdownlint.yaml
+.flake8
+.isort.cfg
+.trunk/
+*__pycache__/

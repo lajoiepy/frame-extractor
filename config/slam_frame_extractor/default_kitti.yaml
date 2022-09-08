@@ -1,0 +1,26 @@
+/**:
+  ros__parameters:
+    backend:
+      log_optimization_files_path: 'OUTPUT_PATH/'
+      pose_graph_optimization_start_period_ms: 500
+      residual_inlier_threshold: 0.1
+      residual_outlier_threshold: 10.0
+    frontend:
+      distance_threshold: 1.5
+      enable_loop_closures: true
+      global_descriptor_technique: netvlad
+      image_crop_size: 376
+      intra_loop_min_inbetween_keyframes: 100
+      keyframe_generation_ratio: 1.0
+      map_manager_process_period_ms: 10
+      max_keyframe_queue_size: 10
+      nn_checkpoint: MODEL_PATH/checkpoint.pth.tar
+      pca_checkpoint: PCA_PATH/pca.pkl
+      pnp_min_inliers: 6
+    results_save_path: 'RESULTS_PATH/'      
+    left_camera_info_topic: stereo_camera/left/camera_info
+    left_image_topic: stereo_camera/left/image_rect_color
+    odom_topic: odom
+    right_camera_info_topic: stereo_camera/right/camera_info
+    right_image_topic: stereo_camera/right/image_rect_color
+    sensor_base_frame_id: camera_link
